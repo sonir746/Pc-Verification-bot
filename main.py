@@ -1,10 +1,9 @@
 import os
-from dotenv import load_dotenv
 from telegram.ext import ApplicationBuilder, CommandHandler
 from handlers.start_handler import start
 from handlers.verify_handler import verify
 
-load_dotenv()
+
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 if not BOT_TOKEN:
